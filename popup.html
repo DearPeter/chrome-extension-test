@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🔮 Gemini 翻译助手</h1>
+    
+    <div class="status" id="status"></div>
+    
+    <div class="section">
+      <label>Gemini API Key</label>
+      <input type="password" id="apiKey" placeholder="输入你的 Gemini API Key">
+      <small>从 <a href="https://aistudio.google.com/app/apikey" target="_blank">Google AI Studio</a> 获取</small>
+    </div>
+    
+    <div class="section">
+      <label class="toggle">
+        <input type="checkbox" id="isEnabled" checked>
+        <span class="slider"></span>
+        <span class="label-text">启用翻译</span>
+      </label>
+    </div>
+    
+    <button id="saveBtn">保存设置</button>
+    
+    <div class="info">
+      <p>🖱️ 鼠标悬停在非中文文本上即可翻译</p>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
